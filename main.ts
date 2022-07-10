@@ -1,0 +1,12 @@
+basic.forever(function () {
+    serial.writeString("x: ")
+    serial.writeNumber(input.acceleration(Dimension.X))
+    serial.writeLine("")
+    serial.writeString(" y: ")
+    serial.writeNumber(input.acceleration(Dimension.Y))
+    serial.writeLine("")
+    serial.writeString(" z: ")
+    serial.writeNumber(input.acceleration(Dimension.Z))
+    serial.writeLine("")
+    basic.pause(1000)
+})
